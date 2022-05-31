@@ -1,0 +1,28 @@
+#Wörterbuch
+list= {"apple":"Apfel", "pear":"Birne", "cherry":"Kirsche", "melon":"Melone", "apricot":"Marille", "peach":"Pfirsich"}
+
+print("Welcome to en2ger, please select the desired function")
+print("Wähle [T] zum Übersetzen")
+print("Wähle [A] um neues wort hinzuzufügen")
+    
+
+    
+correct = False
+    
+while correct == False:        #Bis korrekt
+    eing = input("Funktion wählen: ")    
+    
+    if eing == "T":
+        #correct = True #korrekte Eingabe
+        word=input("Geben Sie eine Wort ein: ") #Auslesen
+        if word in wb:
+            print("Übersetze: ",wb[word]) #Übersetzung
+        else:
+            print('nicht gefunden')
+    elif eing == "A":
+        #correct = True #korrekte Eingabe
+        wb[input('Englische Wort:')] = input('Deutsche Übersetzung:') 
+        #warum wird es nicht gespeichert?
+        
+    else:
+        print("Unbekannte Antwort")
